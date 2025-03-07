@@ -1,10 +1,24 @@
 ---
 layout: post
-title:  "FOSDEM 2025"
+title:  "My FOSDEM 2025"
 date:   2025-03-05 20:43:12 +0100
-categories: fosdem software
+categories:
+categories:
+  - Conferences
+  - FOSDEM
+  - Software Development
+  - Databases
+  - Mobile Development
+  - Coding
+  - APIs
+  - Observability
+  - Security
+  - Open Source
+  - Community
+  - Technology Trends
 ---
-Disclaimer: [FOSDEM](https://fosdem.org/2025/) is H U G E. There is no way in which one can see all, and not even a good fraction of it, so this can't be taken as a review. Just a personal experience, that depends on my preferences, and sometimes on how crowded was the room. (Includes recording)
+
+👋 Disclaimer: [FOSDEM](https://fosdem.org/2025/) is H U G E. There is no way in which one can see all, and not even a good fraction of it, so this can't be taken as a review. Just a personal experience, that depends on my preferences, and sometimes on how crowded was the room.
 
 ## My highlights for this 2025 edition
 
