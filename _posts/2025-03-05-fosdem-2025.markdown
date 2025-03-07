@@ -18,6 +18,8 @@ categories:
   - Technology Trends
 ---
 
+![Fosdem logo](/assets/images/2025/fosdem2025.webp){: width="350" }
+
 👋 Disclaimer: [FOSDEM](https://fosdem.org/2025/) is H U G E. There is no way in which one can see all, and not even a good fraction of it, so this can't be taken as a review. Just a personal experience, that depends on my preferences, and sometimes on how crowded was the room.
 
 ## My highlights for this 2025 edition
