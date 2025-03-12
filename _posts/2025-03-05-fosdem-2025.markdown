@@ -41,7 +41,9 @@ A good overall warning about the tricky parts of upgrading from 8.0. Specially a
 
 ![Vitess logo](/assets/images/2025/vitess.png){: style="display:block; float: right;padding:1.5em;"}
 
-Really interesting for any MySQL project as it eventually grows. They show the architecture behind it and explain how all migration strategies are based on having access to the binlog to feed the new Vitess cluster. Doing a switch at the end to the Vitess cluster. They said that online schema changes on huge databases could go from 2 days in MySQL to 2 hours in Vitess because they are done in parallel. 👏
+Really interesting for any MySQL project as it eventually grows. They show the architecture behind it and explain how all migration strategies are based on having access to the binlog to feed the new Vitess cluster. Doing a switch at the end to the Vitess cluster.
+
+They said that online schema changes on huge databases could go from 2 days in MySQL to 2 hours in Vitess because they are done in parallel. 👏
 
 
 :link: [Migrating Massive Aurora and MySQL Databases to Vitess Kubernetes Clusters with Near-Zero Downtime](https://fosdem.org/2025/schedule/event/fosdem-2025-4759-migrating-massive-aurora-and-mysql-databases-to-Vitess-kubernetes-clusters-with-near-zero-downtime/)
@@ -49,7 +51,9 @@ Really interesting for any MySQL project as it eventually grows. They show the a
 #### Databases in the AI Trenches
 
 It was great to understand the vector space, the training, the attention, and the RAG.
+
 He believes that Google was too focused on using AI solely for their search business, whereas OpenAI utilized Google's research and published papers to develop ChatGPT.
+
 There have to be great resources online explaining this but I did not get into LLMs internals until now.
 
 
@@ -59,14 +63,18 @@ There have to be great resources online explaining this but I did not get into L
 
 #### AsyncAPI for Event-Driven World 101
 
-[AsyncAPI](https://www.asyncapi.com/en) defines how to integrate with external platforms via events 🤩. It’s like OpenAPI, but for event-driven integrations. It actually started as a variant of OpenAPI first. An interesting case is that of [TM Forum](https://www.tmforum.org/), an alliance of over 800 telcos worldwide, working to provide interoperability among telcos and with integrators. They used OpenAPI but now they are migrating to AsyncAPI gradually.
+[AsyncAPI](https://www.asyncapi.com/en) defines how to integrate with external platforms via events 🤩. It’s like OpenAPI, but for event-driven integrations. It actually started as a variant of OpenAPI first.
+
+An interesting case is that of [TM Forum](https://www.tmforum.org/), an alliance of over 800 telcos worldwide, working to provide interoperability among telcos and with integrators. They used OpenAPI but now they are migrating to AsyncAPI gradually.
 
 
 :link: [AsyncAPI for Event-Driven World 101](https://fosdem.org/2025/schedule/event/fosdem-2025-5810-asyncapi-for-event-driven-world-101/)
 
 #### API Scoring \- The Secret Weapon in the Battle for API Excellence
 
-New world to me 😃. API scoring are tools to review your APIs when documented with OpenAPI. During the call, they showed 3 tools, one of which was their own tool, API Scoring [https://inditextech.github.io/api-scoring-doc/](https://inditextech.github.io/api-scoring-doc/).
+New world to me 😃. API scoring are tools to review your APIs when documented with OpenAPI.
+
+During the call, they showed 3 tools, one of which was their own tool, API Scoring [https://inditextech.github.io/api-scoring-doc/](https://inditextech.github.io/api-scoring-doc/).
 
 Others were:
 
@@ -80,7 +88,9 @@ Caution, because data could be sent to creators’ servers. Check first.
 
 #### The OpenAPI Standards Landscape: A Year of Innovation
 
-OpenAPI standards landscape. They introduced the ovelays feature, for example to hide APIs to some consumers, and things like that. Also interesting to see the “workflows” spec (called Arazzo), which describes and makes testable a sequence of API calls to do certain action.
+OpenAPI standards landscape. They introduced the ovelays feature, for example to hide APIs to some consumers, and things like that.
+
+Also interesting to see the “workflows” spec (called Arazzo), which describes and makes testable a sequence of API calls to do certain action.
 
 
 :link: [The OpenAPI Standards Landscape: A Year of Innovation](https://fosdem.org/2025/schedule/event/fosdem-2025-5233-the-openapi-standards-landscape-a-year-of-innovation/)
@@ -89,7 +99,12 @@ OpenAPI standards landscape. They introduced the ovelays feature, for example to
 
 #### Second chance: Upgrading devices from Android 9 to Android 14
 
-A company had several thousand devices with outdated versions, making them vulnerable. Luckily, they had the manufacturer's “Board Support Package” in a ZIP file. Also was key to have an employee from that company expert in that device and in Android. They explained how they had to fix and debug each layer step by step—hardware, bootloader, Linux, and Android—until everything was working, using LineageOS.
+A company had several thousand devices with outdated versions, making them vulnerable.
+
+Luckily, they had the manufacturer's “Board Support Package” in a ZIP file. Also was key to have an employee from that company expert in that device and in Android.
+
+They explained how they had to fix and debug each layer step by step—hardware, bootloader, Linux, and Android—until everything was working, using LineageOS.
+
 They hope that EU laws requiring manufacturers to provide updates for five years will help the ecosystem of legacy devices by making it easier to keep them up to date. (Me too :crossed_fingers:)
 
 
@@ -99,7 +114,12 @@ They hope that EU laws requiring manufacturers to provide updates for five years
 
 #### Using LLMs to support Firefox developers with code review
 
-They have been using cloud LLMs via API to help them improve code review. Results are good. Main surprise for me was that the comments help PR authors to detect things to take into account, and also reviewers to check specific things. Also used by QA to define test scenarios and not forget any.
+They have been using cloud LLMs via API to help them improve code review. Results are good.
+
+Main surprise for me was that the comments help PR authors to detect things to take into account, and also reviewers to check specific things.
+
+Also used by QA to define test scenarios and not forget any.
+
 They are having a hard time to make LLMs not be verbose and polite and nice with comments like “well done” or “this is a good piece of code” 😂
 
 
@@ -109,7 +129,11 @@ They are having a hard time to make LLMs not be verbose and polite and nice with
 
 #### O11y-in-One: Exploring a Unified Telemetry Database
 
-Exploring unified telemetry database. [Clickhouse](https://clickhouse.com/) could contain everything, logs, traces, metrics, in the same database. But its not there yet. Good thing would be that it’s a single data-source. And all open source. I suspect there wouldn’t be significant data-storage savings since logs, metrics, and traces would still be stored in separate tables.
+Exploring unified telemetry database. [Clickhouse](https://clickhouse.com/) could contain everything, logs, traces, metrics, in the same database. But its not there yet.
+
+Main benefit would be that it’s a single data-source. And all open source.
+
+I suspect there wouldn’t be significant data-storage savings since logs, metrics, and traces would still be stored in separate tables.
 
 
 :link: [O11y-in-One: Exploring a Unified Telemetry Database](https://fosdem.org/2025/schedule/event/fosdem-2025-5960-o11y-in-one-exploring-a-unified-telemetry-database/)
@@ -130,8 +154,11 @@ Curiosities:
 #### Post-Quantum Cryptography in OpenPGP
 
 The OpenPGP team has implemented something, but it's not a 'standard' because GnuPG left the working group and implemented it in a slightly different but incompatible way.
+
 Migration to post-quantum ciphers will take time because they first need to be interoperable, and later be installed on all clients.
+
 Most symmetric cyphers are not breakable by quantum (yet). No algorithm breaks them as of today.
+
 They showed this chart explaining how many qubits are needed to break classical cryptography. We are not there yet.
 
 ![][image1]
@@ -143,7 +170,11 @@ They showed this chart explaining how many qubits are needed to break classical 
 
 #### Unearthing the impact of survivorship bias on women in FOSS to build more inclusive communities
 
-Great review of women in tech challenges and the survivor bias. Their answer to what is hiding behind the survivor bias is privilege. Women are not all the same and the ones that don't stay are because they miss some privileges the others had. What they suggest to compensate that is mentorship and workplace inclusion. I learned about the [intersectionality of privilege](https://sites.nd.edu/ccm/2023/02/20/the-intersectionality-of-privilege/) ❤️
+Great review of women in tech challenges and the survivor bias.
+
+Their answer to what is hiding behind the survivor bias is privilege. Women are not all the same and the ones that don't stay are because they miss some privileges the others had.
+
+What they suggest to compensate that is mentorship and workplace inclusion. I learned about the [intersectionality of privilege](https://sites.nd.edu/ccm/2023/02/20/the-intersectionality-of-privilege/) 💖
 
 ![Academic wheel of privilege](/assets/images/2025/wheel-of-privilege.png)
 
@@ -155,16 +186,20 @@ I strongly encourage you to review every aspect to realize how privileged you ar
 
 #### Thunderbird: Building a Cross-Platform, Scalable Open-Source Design System
 
-They defined a base design for all devices, to apply it to all applications. Until recently, every application and developer implemented what they could, but no overall design guidelines existed. Legacy apps have more than 28 shades of blue, hardcoded. It’s interesting that most resistance to the new design came from users who disliked the new interface. 😀 It’s hard to break habits.
+They defined a base design for all devices, to apply it to all applications. Until recently, every application and developer implemented what they could, but no overall design guidelines existed.
+
+Legacy apps have more than 28 shades of blue, hardcoded.
+
+It’s interesting that most resistance to the new design came from users who disliked the new interface. 😀 It’s hard to break habits.
 
 
 :link: [Thunderbird: Building a Cross-Platform, Scalable Open-Source Design System](https://fosdem.org/2025/schedule/event/fosdem-2025-4876-thunderbird-building-a-cross-platform-scalable-open-source-design-system/)
 
 #### 15-minute city in 15 minutes
 
-It was interesting to know that there is open source data and code to generate heatmaps of your town, but existing data is not great, you might have to take your time tagging places into what kind of shop each is, for example.
+It was interesting to know that there is open source data and code to generate heatmaps of your town. But existing data is not great, so you might have to take your time tagging places into what kind of shop each is, for example.
 
-Another interesting insight is that the “15 min cities” concept does not take into account that people often have to leave for work, somteimes for 1h or more. Where your workplace is located is just as important as access to groceries.
+Another interesting insight for me was that the “15 min cities” concept does not take into account that people often have to leave for work, somteimes for 1h or more. Where your workplace is located is just as important as access to groceries.
 
 
 :link: [15-minute city in 15 minutes](https://fosdem.org/2025/schedule/event/fosdem-2025-4627-15-minute-city-in-15-minutes/)
