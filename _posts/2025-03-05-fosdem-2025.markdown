@@ -46,7 +46,7 @@ Really interesting for any MySQL project as it eventually grows. They show the a
 They said that online schema changes on huge databases could go from 2 days in MySQL to 2 hours in Vitess because they are done in parallel. 👏
 
 
-:link: [Migrating Massive Aurora and MySQL Databases to Vitess Kubernetes Clusters with Near-Zero Downtime](https://fosdem.org/2025/schedule/event/fosdem-2025-4759-migrating-massive-aurora-and-mysql-databases-to-Vitess-kubernetes-clusters-with-near-zero-downtime/)
+:link: [Migrating Massive Aurora and MySQL Databases to Vitess Kubernetes Clusters with Near-Zero Downtime](https://fosdem.org/2025/schedule/event/fosdem-2025-4759-migrating-massive-aurora-and-mysql-databases-to-vitess-kubernetes-clusters-with-near-zero-downtime/)
 
 #### Databases in the AI Trenches
 
