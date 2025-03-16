@@ -96,7 +96,7 @@ Caution, because data could be sent to creators’ servers. Check first.
 
 #### The OpenAPI Standards Landscape: A Year of Innovation
 
-OpenAPI standards landscape. They introduced the ovelays feature, for example to hide APIs to some consumers, and things like that.
+They introduced the ovelays feature, for example to hide APIs to some consumers, and things like that.
 
 Also interesting to see the “workflows” spec (called Arazzo), which describes and makes testable a sequence of API calls to do certain action.
 
@@ -161,7 +161,7 @@ Curiosities:
 
 #### Post-Quantum Cryptography in OpenPGP
 
-The OpenPGP team has implemented something, but it's not a 'standard' because GnuPG left the working group and implemented it in a slightly different but incompatible way.
+The OpenPGP team has implemented post-quantum cryptograpyh protocols, but it's not a 'standard' because GnuPG left the working group and implemented it in a slightly different but incompatible way.
 
 Migration to post-quantum ciphers will take time because they first need to be interoperable, and later be installed on all clients.
 
